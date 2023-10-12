@@ -34,7 +34,7 @@ $ make install
 To get started with `shockrays` you will need to initialize the config file.
 
 ```bash
-$ shockrays confit init
+$ shockrays config init
 ```
 
 Now you should find a directory named `.shockrays` in your home directory. 
