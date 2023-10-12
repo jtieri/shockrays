@@ -16,12 +16,25 @@ directories that have subdirectories named after the decompiled files which they
 
 ## How?
 
+### Installing shockrays
+
+You will need to ensure you have Go installed, if not you can find the correct version to install for your operating system
+[here](https://go.dev/dl/). Install the latest version, at the time of writing this that would be Go 1.21.
+
+Clone the directory and install the binary
+
+```bash
+$ git clone https://github.com/jtieri/shockrays.git
+$ cd shockrays
+$ make install
+```
+
 ### Initial Configuration
 
 To get started with `shockrays` you will need to initialize the config file.
 
-```
-shockrays confit init
+```bash
+$ shockrays confit init
 ```
 
 Now you should find a directory named `.shockrays` in your home directory. 
@@ -40,8 +53,8 @@ flag, or by creating an environment variable named `PROJECTOR_RAYS` with the ful
 To decompile a directory full of Director files located at `C:\Users\Anon\Files` you could run the following command.
 The path argument is optional and if it's not provided `shockrays` will look for the files in the `.shockrays` directory.
 
-```
-shockrays decompile C:\Users\Anon\Files 
+```bash
+$ shockrays decompile C:\Users\Anon\Files 
 ```
 
 This will create a subdirectory in the `ouptput` directory for each target file and decompile every Director related 
@@ -52,8 +65,8 @@ neatly organized.
 
 For more information on the various commands and flags available run `shockrays` with the `--help` flag.
 
-```
-shockrays --help
+```bash
+$ shockrays --help
 ```
 
 Additionally, the `--debug` flag can be used with all the commands to have additional information logged
